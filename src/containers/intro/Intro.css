@@ -1,0 +1,278 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.gretting-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+.intro-main {
+  display: flex;
+}
+
+.intro-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-intro-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.intro-text {
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.intro-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.intro-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+.drop-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: drop;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+.flip-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: flip;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes drop {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
+    transform: rotate(5deg);
+  }
+  2% {
+    transform: rotate(10deg);
+  }
+  3% {
+    transform: rotate(15deg);
+  }
+  4% {
+    transform: rotate(20deg);
+  }
+  5% {
+    transform: rotate(25deg);
+  }
+  6% {
+    transform: rotate(30deg);
+  }
+  7% {
+    transform: rotate(35deg);
+  }
+  8% {
+    transform: rotate(40deg);
+  }
+  9% {
+    transform: rotate(45deg);
+  }
+  10% {
+    transform: rotate(50deg);
+  }
+  11% {
+    transform: rotate(55deg);
+  }
+  12% {
+    transform: rotate(60deg);
+  }
+  13% {
+    transform: rotate(55deg);
+  }
+  14% {
+    transform: rotate(50deg);
+  }
+  15% {
+    transform: rotate(45deg);
+  }
+  16% {
+    transform: rotate(40deg);
+  }
+  17% {
+    transform: rotate(35deg);
+  }
+  18% {
+    transform: rotate(30deg);
+  }
+  19% {
+    transform: rotate(25deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  21% {
+    transform: rotate(15deg);
+  }
+  22% {
+    transform: rotate(10deg);
+  }
+  23% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(9deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flip {
+  12% {
+     transform: perspective(400px) rotateY(0);
+     animation-timing-function: ease-out;
+  }
+  40% {
+     transform: perspective(400px) rotate(-10deg) translateX(10px) translateZ(150px) rotateY(350deg);
+     animation-timing-function: ease-out;
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  60% {
+     transform: perspective(400px) rotate(-4deg) translateY(180deg) translateZ(150px) rotateY(360deg) scale(1);
+     animation-timing-function: ease-in;
+  }
+  70% {
+    transform: rotate(9deg);
+  }
+  80% {
+     transform: perspective(400px) rotate(0deg) rotateY(3600deg) scale(.95);
+     animation-timing-function: ease-in;
+  }
+  100% {
+     transform: perspective(400px) scale(1);
+     animation-timing-function: ease-in;
+  }
+}
+
+@keyframes visibility {
+  0% {
+    visibility: hidden;
+  }
+  10% {
+    visibility: hidden;
+  }
+  16% {
+    opacity: 10%;
+    visibility: visible;
+  }
+  18% {
+    opacity: 20%;
+    visibility: visible;
+  }
+  20% {
+    opacity: 30%;
+    visibility: visible;
+  }
+  22% {
+    opacity: 40%;
+    visibility: visible;
+  }
+  24% {
+    opacity: 50%;
+    visibility: visible;
+  }
+  26% {
+    opacity: 60%;
+    visibility: visible;
+  }
+  28% {
+    opacity: 70%;
+    visibility: visible;
+  }
+  30% {
+    opacity: 100%;
+    visibility: visible;
+  }
+  40% {
+    visibility: visible;
+  }
+  50% {
+    visibility: visible;
+  }
+  60% {
+    visibility: visible;
+  }
+  70% {
+    visibility: visible;
+  }
+  80% {
+    visibility: visible;
+  }
+  90% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .intro-text {
+    font-size: 50px;
+  }
+  .intro-text-p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .button-intro-div {
+    justify-content: space-around;
+  }
+  .intro-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .intro-text-p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .intro-main {
+    display: block;
+  }
+}
